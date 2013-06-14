@@ -1,0 +1,42 @@
+#avatar_img {
+    display:block;
+    margin : auto;
+    height : 129px;
+    width  : 80px;
+}
+
+#output {
+    position : absolute;
+    height : 100%;
+    width : 100%;
+    z-index:-1;
+}
+
+#profile_conf{
+    margin:auto;
+    background-color:rgb(125, 228, 125);
+    width:30em;
+    padding:2em;
+    border : 5px green groove;
+    border-radius : 4em;
+}
+#profile_conf input{
+    display:block;
+}
+#profile_conf label{
+    text-align:right;
+    vertical-align:middle;
+    padding-right:1em;
+    display:block;
+    float:left;
+    clear:left;
+    width:10em;
+}
+#profile_conf > div{
+    margin : 2em;
+}
+
+#controls{
+    display:fixed;
+    bottom:2em;
+}

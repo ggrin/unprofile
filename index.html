@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="remotestorage.min.js"></script>
+  <script src="profile-module.js"></script>
+  <script src="main.js"></script>
+  <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+  <iframe id='output'></iframe>
+  <form id="profile_conf" name='profile'>
+    
+    <img id="avatar_img" alt="your avatar image"/>
+    <div>
+      <label for="avatar"> url</label>
+      <input name="avatar">
+    </div>
+    <div>
+      <label for="first_name">first name</label>
+      <input name="first_name">
+    </div>
+    <div>
+      <label for="second_name">second name</label>
+      <input name="second_name">
+    </div>
+    <div>
+      <label for="handle">handle</label>
+      <input name="handle">
+    </div>
+    <div>
+      <label for="contact">contact</label>
+      <input name="contact">
+    </div>
+    <div>
+      <label for="bio">about me</label>
+      <textarea name="bio"></textarea>
+    </div>
+    
+    
+  </form>
+  <div id="controls">
+    <button onclick="gui_save();">Save</button>
+    <button onclick="gui_create();">Preview</button>
+    <button onclick="gui_deploy();"> Change </button>
+    <br>
+    <a id="profile_link" href="">to your profile</a>
+    <a href="http://localhost:4001/?path=../profile/template">
+      edit template
+    </a>
+  </div>
+</body>
+</html>
